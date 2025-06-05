@@ -22,3 +22,4 @@
 [2025-06-05 17:17:42] Choix utilisateur: 1
 [2025-06-05 17:19:40] Calcul terminé pour 7 termes
 [2025-06-05 17:19:40] === FERMETURE APPLICATION ===
+[2025-06-05 18:35:54] === DEMARRAGE APPLICATION FIBONACCI ===
