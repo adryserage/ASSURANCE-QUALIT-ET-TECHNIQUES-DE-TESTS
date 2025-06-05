@@ -2,3 +2,23 @@
 [2025-06-05 16:07:02] Choix utilisateur: 10
 [2025-06-05 16:07:06] Calcul terminé pour 10 termes
 [2025-06-05 16:07:06] === FERMETURE APPLICATION ===
+[2025-06-05 16:20:27] === DEMARRAGE APPLICATION FIBONACCI ===
+[2025-06-05 16:21:14] Choix utilisateur: 
+[2025-06-05 16:21:22] Calcul terminé pour 2 termes
+[2025-06-05 16:21:22] === FERMETURE APPLICATION ===
+[2025-06-05 16:21:34] === DEMARRAGE APPLICATION FIBONACCI ===
+[2025-06-05 16:21:35] Choix utilisateur: 
+[2025-06-05 16:21:57] Calcul terminé pour 7 termes
+[2025-06-05 16:21:57] === FERMETURE APPLICATION ===
+[2025-06-05 17:11:52] === DEMARRAGE APPLICATION FIBONACCI ===
+[2025-06-05 17:12:00] Choix utilisateur: 1
+[2025-06-05 17:12:04] Calcul terminé pour 7 termes
+[2025-06-05 17:12:04] === FERMETURE APPLICATION ===
+[2025-06-05 17:15:15] === DEMARRAGE APPLICATION FIBONACCI ===
+[2025-06-05 17:15:17] Choix utilisateur: 1
+[2025-06-05 17:16:15] Calcul terminé pour 7 termes
+[2025-06-05 17:16:15] Choix utilisateur: 
+[2025-06-05 17:17:38] === DEMARRAGE APPLICATION FIBONACCI ===
+[2025-06-05 17:17:42] Choix utilisateur: 1
+[2025-06-05 17:19:40] Calcul terminé pour 7 termes
+[2025-06-05 17:19:40] === FERMETURE APPLICATION ===

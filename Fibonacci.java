@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+// import static calc.*;
+
+
 public class Fibonacci {
     
     private static FileWriter logFile;
@@ -21,9 +24,9 @@ public class Fibonacci {
             ecrireLog("=== DEMARRAGE APPLICATION FIBONACCI ===");
             
             Scanner scanner = new Scanner(System.in);
-            boolean continuer = true;
+            int continuer = 1;
             
-            while(continuer) {
+            do {
                 afficherMenu();
                 
                 String choix = scanner.nextLine();
@@ -40,19 +43,19 @@ public class Fibonacci {
                 }
 
                 // Méthode itérative
-                long startTime = System.nanoTime();
-                List<Long> suiteIterative = fibonacciIteratif(n);
+                long starttime = System.nanoTime();
+                List<Long> suiteIterative = calculeFibo.FibonacciIteratif(n);
                 long endTime = System.nanoTime();
-                long dureeIterative = (endTime - startTime) / 1000; // Conversion en microsecondes
+                long dureeIterative = (endTime - starttime) / 1000; // Conversion en microsecondes
 
                 // Méthode récursive
-                startTime = System.nanoTime();
+                starttime = System.nanoTime();
                 List<Long> suiteRecursive = new ArrayList<>();
                 for (int i = 0; i < n; i++) {
-                    suiteRecursive.add(fibonacciRecursif(i));
+                    suiteRecursive.add(calculeFibo.fiboRec(i));
                 }
                 endTime = System.nanoTime();
-                long dureeRecursive = (endTime - startTime) / 1000; // Conversion en microsecondes
+                long dureeRecursive = (endTime - starttime) / 1000; // Conversion en microsecondes
 
                 // Affichage des résultats
                 System.out.println("\nSuite de Fibonacci (" + n + " termes) :");
@@ -70,12 +73,15 @@ public class Fibonacci {
                     System.out.println("La méthode récursive est plus rapide de " + 
                         (dureeIterative - dureeRecursive) + " microsecondes");
                 }
-
-                continuer = false;
+                System.out.print("\nVoulez-vous continuer ? (1.Oui \t2.Non) : ");
+                continuer = scanner.nextInt();
                 ecrireLog("Calcul terminé pour " + n + " termes");
-            }
+            }while(continuer==1);
+            
             
             scanner.close();
+
+            // Fermer le fichier de log
             ecrireLog("=== FERMETURE APPLICATION ===");
             logFile.close();
             
@@ -91,26 +97,7 @@ public class Fibonacci {
     
 
     
-    // Méthode itérative pour calculer la suite de Fibonacci
-    public static List<Long> fibonacciIteratif(int n) {
-        List<Long> suite = new ArrayList<>();
-        if (n <= 0) return suite;
-
-        suite.add(0L);
-        if (n == 1) return suite;
-
-        suite.add(1L);
-        for (int i = 2; i < n; i++) {
-            suite.add(suite.get(i-1) + suite.get(i-2));
-        }
-        return suite;
-    }
-
-    // Méthode récursive pour calculer un terme de la suite de Fibonacci
-    public static long fibonacciRecursif(int n) {
-        if (n <= 1) return n;
-        return fibonacciRecursif(n-1) + fibonacciRecursif(n-2);
-    }
+    
 
     public static void ecrireLog(String message) {
         try {
