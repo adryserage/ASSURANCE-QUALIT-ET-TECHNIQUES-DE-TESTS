@@ -1,0 +1,4 @@
+[2025-06-05 16:06:52] === DEMARRAGE APPLICATION FIBONACCI ===
+[2025-06-05 16:07:02] Choix utilisateur: 10
+[2025-06-05 16:07:06] Calcul terminé pour 10 termes
+[2025-06-05 16:07:06] === FERMETURE APPLICATION ===
